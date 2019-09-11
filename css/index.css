@@ -154,20 +154,42 @@ body {
 html {
   font-size: 62.5%;
 }
-img {
-  display: flex;
-  max-width: 35%;
-  padding: 25px;
-}
 .container {
   display: flex;
   flex-direction: column;
 }
 .container nav {
-  border: 1px solid black;
   display: flex;
   justify-content: space-around;
+  padding: 2%;
 }
 .container a {
   text-decoration: none;
+}
+img {
+  max-width: 40%;
+  border: 1px solid black;
+  height: auto;
+}
+.me {
+  display: flex;
+  border: 1px solid black;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.me .intro-text {
+  border: 1px solid red;
+  background-image: url('img/img1.jpg');
+  background-repeat: no-repeat, repeat;
+}
+.me h1 {
+  font-size: 6rem;
+  padding: 2%;
+}
+.me p {
+  font-size: 3rem;
+  padding: 2%;
+}
+.skills {
+  border: 1px solid green;
 }
