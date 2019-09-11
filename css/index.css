@@ -120,6 +120,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: 'Montserrat', sans-serif;
 }
 ol,
 ul {
@@ -153,6 +154,13 @@ body {
 }
 html {
   font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lato', sans-serif;
 }
 .container {
   display: flex;
@@ -192,4 +200,75 @@ img {
 }
 .skills {
   border: 1px solid green;
+  padding: 3%;
+}
+.skills .skills-text {
+  font-size: 1.6rem;
+}
+.skills h2 {
+  font-size: 2.6rem;
+}
+table {
+  margin: 2em 2em;
+  width: 100%;
+  border: 1px solid #5d42a6;
+}
+.table-section {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+  padding: 5%;
+}
+.table-section table tbody tr {
+  border: solid 1px #5d42a6;
+  border-left: 0;
+  border-right: 0;
+}
+.table-section table tbody tr:nth-child(2n + 1) {
+  background-color: lightgrey;
+}
+.table-section table td {
+  padding: 0.75rem 0.75rem;
+}
+.table-section table th {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  text-align: left;
+}
+.table-section table thead {
+  border-bottom: #5d42a6;
+}
+.table-section table tfoot {
+  border-top: #5d42a6;
+}
+.table-section .table h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding: 5%;
+}
+.contact .contact-text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  border: 2px dotted cadetblue;
+  padding: 2%;
+  align-items: flex-start;
+  margin-top: 10%;
+  flex-direction: column;
+}
+.contact .contact-text h2 {
+  padding: 10px;
+  display: flex;
+}
+.contact .contact-text p {
+  padding: 3px;
+}
+footer {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
