@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Modak&display=swap');
+
+// ******* variables  ************** //
+
+@body-font: 'Hepta Slab', serif;
+@heading-font: 'Modak', cursive;
+@main-color: #5d42a6;
+
+// ******* mixins ************** //
+.border(){
+	border: 2px dotted cadetblue;
+	padding: 2%;
+}
+
+.center(){
+	display: flex;
+	justify-content: center;
+}
+
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -64,12 +83,37 @@ html, body {
 
 html {
 	font-size: 62.5%;
-  }
+}
 
 img {
 	display: flex;
-	max-width: 50%;
-	height: auto;
+	max-width: 35%;
+	padding: 25px;	
 }
+
+// variables //
+
+// mixins //
+
+// Header Styles //
+
+.container {
+	display: flex;
+	flex-direction: column;
+
+	nav {
+		border: 1px solid black;
+		display: flex;
+		justify-content: space-around;
+		
+	}
+
+	a {
+		text-decoration: none;
+	}
+ 
+	
+}
+
 
 

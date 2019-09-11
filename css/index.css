@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heptaslab/v2/ea8JadoyU_jkHdalebHvyWVNdYoIsHe5HvkV5wfcaZQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Modak';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Modak'), url(https://fonts.gstatic.com/s/modak/v5/EJRYQgs1XtIEskMA-hE.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,6 +156,18 @@ html {
 }
 img {
   display: flex;
-  max-width: 50%;
-  height: auto;
+  max-width: 35%;
+  padding: 25px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container nav {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+.container a {
+  text-decoration: none;
 }
