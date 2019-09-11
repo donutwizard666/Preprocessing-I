@@ -116,12 +116,21 @@ img {
 
 .me {
 	display: flex;
-	border: 1px solid black;
+	border: 5px solid black;
 	flex-direction: row-reverse;
 	justify-content: space-around;
 
+	@media( max-width: 500px ) {
+		flex-direction: column;
+		align-items: center;
+	
+	}
+
+		
+	}
+
 	.intro-text {
-		border: 1px solid red;
+		// border: 1px solid red;
 		background-image: url('img/img1.jpg');
 		background-repeat: no-repeat, repeat;
 	}
@@ -136,20 +145,21 @@ img {
 		padding: 2%;
 
 	}
-}
 
 // Skills section /// 
 
 .skills {
-	border: 1px solid green;
+	// border: 1px solid green;
 	padding: 3%;
 
 	.skills-text {
 		font-size: 1.6rem
+		
 	}
 
 	h2 {
 		font-size: 2.6rem;
+		padding: 15px;
 	}
 
 	
