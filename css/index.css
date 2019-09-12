@@ -192,7 +192,6 @@ img {
 }
 .me {
   display: flex;
-  border: 5px solid black;
   flex-direction: row-reverse;
   justify-content: space-around;
   background: rgba(127, 153, 145, 0.5);
@@ -207,6 +206,7 @@ img {
   .me {
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
   }
 }
 .me .intro-text {
@@ -222,6 +222,7 @@ img {
 }
 .skills {
   padding: 3%;
+  color: whitesmoke;
 }
 .skills .skills-text {
   font-size: 1.6rem;
@@ -233,11 +234,11 @@ img {
 .table-section {
   display: flex;
   justify-content: space-around;
-  border: 1px solid red;
   padding: 5%;
+  background-color: whitesmoke;
 }
 .table-section table {
-  margin: 2em 2em;
+  margin: 2rem 1rem;
   width: 100%;
   border: 1px solid #5d42a6;
 }
@@ -270,6 +271,8 @@ img {
   justify-content: center;
   font-size: 1.6rem;
   padding: 5%;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 .contact .contact-text {
   display: flex;
@@ -285,13 +288,16 @@ img {
   padding: 10px;
   display: flex;
   letter-spacing: 8px;
+  color: whitesmoke;
 }
 .contact .contact-text p {
   padding: 3px;
+  color: whitesmoke;
 }
 footer {
   margin-bottom: 40px;
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
+  color: whitesmoke;
 }
