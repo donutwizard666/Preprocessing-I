@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Modak&display=swap');
+
+// ******* variables  ************** //
+
+@body-font: 'Montserrat', sans-serif;
+@heading-font: 'Lato', sans-serif;
+@main-color: #5d42a6;
+@secondary-color: #ae4c93;
+
+// ******* mixins ************** //
+.border(){
+	border: 2px dotted cadetblue;
+	padding: 2%;
+}
+
+.center(){
+	display: flex;
+	justify-content: center;
+}
+
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -31,6 +51,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: @body-font;
 }
 ol, ul {
 	list-style: none;
@@ -50,10 +71,246 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	
 }
+
+html {
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: @heading-font;
+}
+
+
+// Header Styles //
+
+.container {
+	display: flex;
+	flex-direction: column;
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		padding: 2%;
+	}
+	a {
+		text-decoration: none;
+		color: @main-color;
+	}	
+	
+
+
+}
+
+a:hover {
+	background-color: @secondary-color;
+}
+
+body {
+	background-image: url("../img/img1.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+}
+// Intro Section Styles//
+img {
+	max-width: 40%;
+	border: 1px solid black;
+	height: auto;
+}
+
+.me {
+	display: flex;
+	// border: 5px solid black;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	background: rgba(127, 153, 145, 0.5);
+
+
+
+	@media( max-width: 500px ) {
+		flex-direction: column;
+		align-items: center;
+	
+	}
+
+	@media( max-width: 767px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+
+
+	.intro-text {
+		// border: 1px solid red;
+		background-image: url('img/img1.jpg');
+	}
+
+	h1 {
+		font-size: 6.0rem;
+		padding: 2%;
+	}
+
+	p {
+		font-size: 3.0rem;
+		padding: 2%;
+	}
+}
+// Skills section /// 
+
+.skills {
+	padding: 3%;
+	color: whitesmoke;
+	
+
+	.skills-text {
+		font-size: 1.6rem
+	
+		
+	}
+
+	h2 {
+		font-size: 2.6rem;
+		padding: 20px 0px;
+		
+
+	}
+}
+	
+
+// table styles//
+
+
+
+
+.table-section {
+
+	table {
+		margin: 2rem 1rem;
+		width: 100%;
+		border: 1px solid #5d42a6;
+		
+		
+	}
+
+	display: flex;
+	justify-content: space-around;
+	
+	padding: 5%;
+	background-color: whitesmoke;
+
+
+	table tbody tr {
+		border: solid 1px @main-color;
+		border-left: 0;
+		border-right: 0;
+		
+	}
+
+	table tbody tr:nth-child(2n + 1) {
+		background-color: lightgrey;
+	}
+
+	table td {
+		padding: 0.75rem 0.75rem;
+	}
+
+	table th {
+		color: black;
+		font-size: 1em;
+		font-weight: bold;
+		padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+		text-align: left;
+	}
+
+	table thead {
+		border-bottom: @main-color;
+		
+	}
+
+	table tfoot {
+		border-top: @main-color
+	}
+
+	.table h2 {
+		display: flex;
+		justify-content: center;
+		font-size: 1.6rem;
+		padding: 5%;
+		border: 1px solid black;
+		border-radius: 8px;
+	}
+
+}
+
+// bottom section//
+
+.contact .contact-text {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.6rem;
+	.border();
+	align-items: flex-start;
+	margin-top: 10%;
+	flex-direction: column;
+	
+
+	h2 {
+		padding: 10px;
+		display: flex;
+		letter-spacing: 8px;
+		color: whitesmoke;
+
+	}
+
+	p {
+		padding: 3px;
+		color: whitesmoke;
+	}
+
+	
+
+	
+}
+
+// footer//
+
+footer {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 30px;
+	color: whitesmoke;
+}
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+	
+
 

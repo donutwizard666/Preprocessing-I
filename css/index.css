@@ -1,1 +1,303 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Hepta Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/heptaslab/v2/ea8JadoyU_jkHdalebHvyWVNdYoIsHe5HvkV5wfcaZQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Modak';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Modak'), url(https://fonts.gstatic.com/s/modak/v5/EJRYQgs1XtIEskMA-hE.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lato', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+.container a {
+  text-decoration: none;
+  color: #5d42a6;
+}
+a:hover {
+  background-color: #ae4c93;
+}
+body {
+  background-image: url("../img/img1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+img {
+  max-width: 40%;
+  border: 1px solid black;
+  height: auto;
+}
+.me {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background: rgba(127, 153, 145, 0.5);
+}
+@media (max-width: 500px) {
+  .me {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .me {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.me .intro-text {
+  background-image: url('img/img1.jpg');
+}
+.me h1 {
+  font-size: 6rem;
+  padding: 2%;
+}
+.me p {
+  font-size: 3rem;
+  padding: 2%;
+}
+.skills {
+  padding: 3%;
+  color: whitesmoke;
+}
+.skills .skills-text {
+  font-size: 1.6rem;
+}
+.skills h2 {
+  font-size: 2.6rem;
+  padding: 20px 0px;
+}
+.table-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+  background-color: whitesmoke;
+}
+.table-section table {
+  margin: 2rem 1rem;
+  width: 100%;
+  border: 1px solid #5d42a6;
+}
+.table-section table tbody tr {
+  border: solid 1px #5d42a6;
+  border-left: 0;
+  border-right: 0;
+}
+.table-section table tbody tr:nth-child(2n + 1) {
+  background-color: lightgrey;
+}
+.table-section table td {
+  padding: 0.75rem 0.75rem;
+}
+.table-section table th {
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  text-align: left;
+}
+.table-section table thead {
+  border-bottom: #5d42a6;
+}
+.table-section table tfoot {
+  border-top: #5d42a6;
+}
+.table-section .table h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding: 5%;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.contact .contact-text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  border: 2px dotted cadetblue;
+  padding: 2%;
+  align-items: flex-start;
+  margin-top: 10%;
+  flex-direction: column;
+}
+.contact .contact-text h2 {
+  padding: 10px;
+  display: flex;
+  letter-spacing: 8px;
+  color: whitesmoke;
+}
+.contact .contact-text p {
+  padding: 3px;
+  color: whitesmoke;
+}
+footer {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  color: whitesmoke;
+}
