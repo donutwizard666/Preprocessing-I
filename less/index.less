@@ -5,6 +5,7 @@
 @body-font: 'Montserrat', sans-serif;
 @heading-font: 'Lato', sans-serif;
 @main-color: #5d42a6;
+@secondary-color: #ae4c93;
 
 // ******* mixins ************** //
 .border(){
@@ -98,15 +99,32 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column;
 
 	nav {
-	display: flex;
-	justify-content: space-around;
-	padding: 2%;
-}
+		display: flex;
+		justify-content: space-around;
+		padding: 2%;
+	}
 	a {
-	text-decoration: none;
+		text-decoration: none;
+		color: @main-color;
 	}	
+	
+
+
 }
 
+a:hover {
+	background-color: @secondary-color;
+}
+
+body {
+	background-image: url("../img/img1.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+}
 // Intro Section Styles//
 img {
 	max-width: 40%;
@@ -119,6 +137,9 @@ img {
 	border: 5px solid black;
 	flex-direction: row-reverse;
 	justify-content: space-around;
+	background: rgba(127, 153, 145, 0.5);
+
+
 
 	@media( max-width: 500px ) {
 		flex-direction: column;
@@ -126,13 +147,16 @@ img {
 	
 	}
 
-		
+	@media( max-width: 767px) {
+		flex-direction: column;
+		align-items: center;
 	}
+
+
 
 	.intro-text {
 		// border: 1px solid red;
 		background-image: url('img/img1.jpg');
-		background-repeat: no-repeat, repeat;
 	}
 
 	h1 {
@@ -143,14 +167,13 @@ img {
 	p {
 		font-size: 3.0rem;
 		padding: 2%;
-
 	}
-
+}
 // Skills section /// 
 
 .skills {
-	// border: 1px solid green;
 	padding: 3%;
+	
 
 	.skills-text {
 		font-size: 1.6rem
@@ -159,23 +182,27 @@ img {
 
 	h2 {
 		font-size: 2.6rem;
-		padding: 15px;
-	}
+		padding: 20px 0px;
+		
 
+	}
+}
 	
 
-}
 // table styles//
 
 
-table {
-	margin: 2em 2em;
-	width: 100%;
-	border: 1px solid #5d42a6;
-	
-}
+
 
 .table-section {
+
+	table {
+		margin: 2em 2em;
+		width: 100%;
+		border: 1px solid #5d42a6;
+		
+	}
+
 	display: flex;
 	justify-content: space-around;
 	border: 1px solid red;
@@ -236,6 +263,7 @@ table {
 	h2 {
 		padding: 10px;
 		display: flex;
+		letter-spacing: 8px;
 
 	}
 
@@ -253,7 +281,7 @@ table {
 footer {
 	margin-bottom: 40px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	padding-top: 30px;
 }
 
